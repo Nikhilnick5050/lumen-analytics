@@ -1,0 +1,5 @@
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--sp-6); padding: var(--sp-10); border: 1px solid var(--border); border-radius: var(--r-xl); background: var(--bg-subtle); }
+.stats__item { display: flex; flex-direction: column; gap: 2px; text-align: center; }
+.stats__value { font-size: clamp(1.75rem, 4vw, 2.5rem); font-weight: 700; letter-spacing: -0.03em; color: var(--brand-strong); }
+.stats__label { color: var(--text-3); font-size: 0.9rem; }
+@media (max-width: 700px) { .stats { grid-template-columns: repeat(2, 1fr); padding: var(--sp-6); } }

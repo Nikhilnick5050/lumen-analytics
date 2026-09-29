@@ -1,0 +1,8 @@
+.accordion { display: flex; flex-direction: column; gap: var(--sp-3); }
+.accordion__item { border: 1px solid var(--border); border-radius: var(--r-md); background: var(--surface); overflow: hidden; }
+.accordion__trigger { display: flex; align-items: center; justify-content: space-between; gap: var(--sp-4); width: 100%; text-align: left; background: transparent; border: none; padding: var(--sp-4) var(--sp-5); cursor: pointer; font-weight: 600; font-size: 0.98rem; color: var(--text); }
+.accordion__trigger:hover { background: var(--bg-subtle); }
+.accordion__icon { color: var(--text-3); transition: transform var(--dur) var(--ease); flex-shrink: 0; }
+.accordion__icon--open { transform: rotate(180deg); }
+.accordion__panel { animation: fadeIn 0.2s var(--ease); }
+.accordion__content { padding: 0 var(--sp-5) var(--sp-5); color: var(--text-2); }

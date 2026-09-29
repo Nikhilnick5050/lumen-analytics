@@ -1,0 +1,24 @@
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--sp-2);
+  border: 1px solid transparent; border-radius: var(--r-md); font-weight: 600; cursor: pointer;
+  white-space: nowrap; user-select: none;
+  transition: transform var(--dur) var(--ease), background var(--dur) var(--ease), border-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+.btn:active:not(:disabled) { transform: translateY(1px); }
+.btn:disabled { opacity: 0.55; cursor: not-allowed; }
+.btn--sm { height: 34px; padding: 0 var(--sp-3); font-size: 0.85rem; }
+.btn--md { height: 42px; padding: 0 var(--sp-5); font-size: 0.95rem; }
+.btn--lg { height: 50px; padding: 0 var(--sp-6); font-size: 1rem; }
+.btn--full { width: 100%; }
+.btn--primary { background: var(--brand); color: #06251b; box-shadow: var(--shadow-brand); }
+.btn--primary:hover:not(:disabled) { background: var(--brand-strong); color: #fff; }
+.btn--secondary { background: var(--text); color: var(--bg); }
+.btn--secondary:hover:not(:disabled) { background: var(--text-2); }
+.btn--outline { background: transparent; border-color: var(--border-strong); color: var(--text); }
+.btn--outline:hover:not(:disabled) { border-color: var(--brand); color: var(--brand-strong); background: var(--brand-soft); }
+.btn--ghost { background: transparent; color: var(--text-2); }
+.btn--ghost:hover:not(:disabled) { background: var(--bg-muted); color: var(--text); }
+.btn--danger { background: var(--danger); color: #fff; }
+.btn--danger:hover:not(:disabled) { background: #dc2626; }
+.btn__spinner { width: 16px; height: 16px; border: 2px solid currentColor; border-top-color: transparent; border-radius: 50%; animation: spin 0.7s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }

@@ -1,0 +1,9 @@
+.testimonials__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--sp-6); }
+.testimonials__card { display: flex; flex-direction: column; gap: var(--sp-4); }
+.testimonials__stars { color: #f59e0b; letter-spacing: 2px; font-size: 0.9rem; }
+.testimonials__quote { color: var(--text-2); font-size: 1rem; line-height: 1.6; }
+.testimonials__person { display: flex; align-items: center; gap: var(--sp-3); margin-top: auto; }
+.testimonials__avatar { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--brand-soft); color: var(--brand-strong); font-weight: 700; font-size: 0.85rem; flex-shrink: 0; }
+.testimonials__name { font-weight: 600; font-size: 0.92rem; }
+.testimonials__role { color: var(--text-3); font-size: 0.82rem; }
+@media (max-width: 900px) { .testimonials__grid { grid-template-columns: 1fr; } }
